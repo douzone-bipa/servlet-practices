@@ -6,6 +6,5 @@
   <packaging>pom</packaging>
   <modules>
   	<module>helloweb</module>
-  	<module>helloweb2</module>
   </modules>
 </project>
