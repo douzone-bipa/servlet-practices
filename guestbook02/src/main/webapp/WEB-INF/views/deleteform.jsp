@@ -5,12 +5,18 @@
 <title>방명록</title>
 </head>
 <body>
-	<form method="post" action="delete.jsp">
-		<input type="hidden" name="no" value="">
-		<input type="password" name="password">
-		<input type="submit" value="확인">
+	<form method="post" action="<%=request.getContextPath() %>/gb">
+		<input type="hidden" name="a" value="delete">
+		<input type='hidden' name='no' value='<%=request.getParameter("no") %>'>
+		<table>
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="password" name="password"></td>
+				<td><input type="submit" value="확인"></td>
+			</tr>
+		</table>
+		<br>
+		<a href="<%=request.getContextPath() %>/gb">메인으로 돌아가기</a>
 	</form>
-	<br>	
-	<a href="/guestbook01">메인으로 돌아가기</a>
 </body>
 </html>
